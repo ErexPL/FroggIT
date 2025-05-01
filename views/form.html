@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dawid Zyś">
+    <link rel="stylesheet" href="/css/form.css">
+    <title>FroggIT | Zajęcia Online</title>
+    <link rel="icon" href="/imgs/logo.png">
+</head>
+<body>
+    <header>  
+        <span id="circle_1"><img src="/imgs/logo.png" alt="logo"></span>
+        <span id="circle_2"></span>
+        <span id="circle_3"></span>
+        <nav>
+            <ul>
+                <li><a href="/">Strona Główna</a></li>
+                <li><a href="/gallery">Galeria</a></li>
+                <li><a href="/info">Hodowla</a></li>
+                <li><a href="/form">Zajęcia online</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <article>
+            <h3>Niesamowite żaby</h3>
+            <p>Istnieje żaba, która potrafi szybować - żaba latająca jawajska. Ciekawym płazem jest też szklana żabka, ponieważ jest przeźroczysta. Istnieje również żaba, której kijanka jest cztery razy większa od dorosłego, jest to żaba arlekin. Żaba, która pokonała jednym skokiem 169 centymetrów, to żaba leopardowa. Najgłośniejszy płaz to żaba rycząca, a najsilniej trujący płaz to liściołaz straszliwy. Trucizna liściołaza potrafi zabić 10 ludzi lub 20000 myszy!</p>
+        </article>
+        <img src="/imgs/form/frog.png" alt="żaba_1">
+    </aside>
+    <main>
+        <h1>Zajęcia Online</h1>
+        <article>
+            <p>Zajęcia online o żabach to świetny sposób na poznanie fascynującego świata tych zwierząt bez wychodzenia z domu. Podczas takich zajęć uczestnicy będą mieli możliwość nauczenia się wiele interesujących rzeczy o żabach, takich jak ich tryb życia, anatomiczne cechy, zachowania i wiele innych. Zajęcia będą prowadzone przez doświadczonych prowadzących, którzy zaprezentują wizualizacje, zdjęcia oraz filmy w celu ułatwienia zrozumienia materiału. Uczestnicy będą mieli możliwość zadawania pytań i uczestnictwa w interaktywnych dyskusjach z prowadzącymi oraz innymi uczestnikami. Podczas tych zajęć, uczestnicy będą mieli okazję poznać różnorodność gatunków żab i ich środowiska naturalne, a także zrozumieć ich rolę w ekosystemie. Będą mieli możliwość zapoznania się z najnowszymi badaniami naukowymi dotyczącymi żab i odkryć, jakie zagrożenia czyhają na te zwierzęta i jak można im pomóc.<br><br>Jeśli jesteś zainteresowany/a udziałem w zajęciach online o żabach, zachęcamy do wypełnienia poniższego formularza zapisowego. Będziemy mieli przyjemność poinformować Cię o nadchodzących terminach i szczegółach dotyczących zajęć. Do zobaczenia na zajęciach!</p>
+        </article>
+        <h1>Formularz</h1>
+        <article>
+            <form>
+                <label for="imie">*Imię:
+                    <input type="text" id="imie" name="imie" placeholder="Jan" required>
+                </label>
+                <label for="nazwisko">*Nazwisko:
+                    <input type="text" id="nazwisko" name="nazwisko" placeholder="Kowalski" required>
+                </label>
+                <label for="email">*Adres e-mail:
+                    <input type="email" id="email" name="email" placeholder="jan.kowalski@gmail.com" required>
+                </label>
+                <label for="telefon">Numer telefonu:
+                    <input type="tel" id="telefon" name="telefon" placeholder="123 456 789">
+                </label>
+                <label for="miasto">Miasto:
+                    <input type="text" id="miasto" name="miasto" placeholder="Gliwice">
+                </label>
+                <label for="kod-pocztowy">Kod pocztowy:
+                    <input type="text" id="kod-pocztowy" name="kod-pocztowy" placeholder="44-105">
+                </label>
+                <label for="wiadomosc">Dodatkowe informacje:
+                    <textarea id="wiadomosc" name="wiadomosc" rows="4" cols="50" placeholder="Nie posiadam kamerki / mikrofonu"></textarea>
+                </label>
+                <fieldset>
+                    <label id="choice_label">*Preferowany termin zajęć:</label>
+                    <input type="radio" id="termin-1" name="termin" value="1" required>
+                    <label for="termin-1" value="">Wtorek, godzina 18:00-19:30</label>
+                    <input type="radio" id="termin-2" name="termin" value="2">
+                    <label for="termin-2">Piątek, godzina 15:00-16:30</label>
+                    <input type="radio" id="termin-3" name="termin" value="3">
+                    <label for="termin-3">Niedziela, godzina 10:00-11:30</label>
+                </fieldset>
+                <input type="submit" value="Wyślij zgłoszenie">
+              </form>
+        </article>
+    </main>
+    <footer>
+        <p>FroggIT &copy;</p>
+        <img src="/imgs/logo.png" alt="logo">
+        <p>Dawid Zyś ZSTI 2025r.</p>
+    </footer>
+</body>
+</html>
