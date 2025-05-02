@@ -3,6 +3,7 @@ main {
     flex-wrap: wrap;
     background-color: #F4FFC6;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 main > img {

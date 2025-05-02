@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Dawid Zyś">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/index.css">
-    <title>FroggIT | Strona Główna</title>
     <link rel="icon" href="/imgs/logo.png">
+    <title>FroggIT | Strona Główna</title>
 </head>
 <body>
-    <header>  
-        <span id="circle_1"><img src="/imgs/logo.png" alt="logo"></span>
-        <span id="circle_2"></span>
-        <span id="circle_3"></span>
+    <header>
+        <section>
+            <img src="/imgs/logo.png" alt="logo">
+            <h1>FroggIT</h1>
+        </section>
         <nav>
             <ul>
-                <li><a href="/">Strona Główna</a></li>
-                <li><a href="/gallery">Galeria</a></li>
-                <li><a href="/info">Hodowla</a></li>
-                <li><a href="/form">Zajęcia online</a></li>
+                <li><a href="/" class="active"><i class="fa-solid fa-house"></i>Strona Główna</a></li>
+                <li><a href="/gallery"><i class="fa-solid fa-images"></i>Galeria</a></li>
+                <li><a href="/info"><i class="fa-solid fa-frog"></i>Hodowla</a></li>
+                <li><a href="/form"><i class="fa-solid fa-laptop"></i>Zajęcia online</a></li>
             </ul>
         </nav>
+        <section class="theme-toggle">
+            <i class="fa-solid fa-sun"></i>
+        </section>
     </header>
     <aside>
         <article>
@@ -108,5 +113,6 @@
         <img src="/imgs/logo.png" alt="logo">
         <p>Dawid Zyś ZSTI 2025r.</p>
     </footer>
+    <script src="/js/main.js"></script>
 </body>
 </html>

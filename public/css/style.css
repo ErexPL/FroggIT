@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
+
+:root {
+    --primary-color: #00a0ff;
+    --secondary-color: #00a000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Cascadia Code", sans-serif;
+    scroll-behavior: smooth;
+    transition: 0.25s ease;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--white-color);
+    box-shadow: 0 4px 20px var(--shadow-color);
+    padding: 1.2rem 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header:hover {
+    box-shadow: 0 -4px 20px var(--primary-color);
+}
+
+header img {
+    width: 72px;
+    margin-right: 1.2rem;
+}
+
+header img:hover {
+    transform: rotate(10deg);
+}
+
+header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 1.8rem;
+}
+
+li {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 500;
+    padding: 0.9rem 1.2rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    transform: translateX(-100%);
+}
+
+a:hover::before {
+    transform: translateX(0);
+}
+
+a.active::before {
+    transform: translateX(0);
+    background-color: var(--secondary-color);
+}
+
+a:hover {
+    color: var(--primary-color)
+}
+
+a.active {
+    color: var(--secondary-color)
+}
+
+i {
+    margin-right: 0.6rem;
+    font-size: 1.5rem;
+}
+
+a:hover i {
+    transform: translateY(-3px);
+}
+
+.theme-toggle {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25%;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.theme-toggle:hover {
+    background-color: var(--primary-color);
+}
+
+.theme-toggle:hover i {
+    color: var(--white-color);
+    transform: rotate(20deg)
+}
+
+.theme-toggle i {
+    color: var(--primary-color);
+    margin-right: 0;
+}
+
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #468132;
+    width: 400px;
+    padding: 25px;
+    padding-top: 250px;
+    align-items: center;
+}
+
+aside > article {
+    display: flex;
+    margin: 40px;
+    flex-basis: 80%;
+    width: auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: start;
+}
+
+aside > article > h3 {
+    font-size: 1.75em;
+    margin: 10px;
+    text-align: center;
+    border-bottom: 5px #050505 solid;
+    border-radius: 15px;
+    padding-bottom: 15px;
+}
+
+aside > article > p {
+    font-size: 1em;
+    margin: 25px;
+}
+
+aside > img {
+    height: 250px;
+    margin: 40px;
+    padding: 0px;
+    flex-basis: 80%;
+    border-radius: 15px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
+}
+
+main {
+    background-color: #F4FFC6;
+    width: calc(100% - 400px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+}
+
+main > h1 {
+    display: flex;
+    width: 100%;
+    font-size: 3.5vw;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5vw;
+}
+
+footer {
+    display: flex;
+    background-color: #A16262;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > img {
+    width: 4vw;
+    margin: 30px;
+}
+
+footer > p {
+    color: #FAFAFA;
+    text-align: center;
+    font-size: 1vw;
+    font-weight: 900;
+    width: 6vw;
+}
