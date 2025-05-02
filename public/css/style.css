@@ -86,6 +86,7 @@ a::before {
     height: 3px;
     background-color: var(--primary-color);
     transform: translateX(-100%);
+    transition: 0.25s ease;
 }
 
 a:hover::before {
