@@ -1,218 +1,12 @@
-* {
-
-    box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0;
-    overflow-x: hidden;
-    user-select: none;
-
-}
-
-body {
-
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-a, a:visited {
-
-    width: 46vw;
-    text-decoration: none;
-    color: #050505;
-
-}
-
-header {
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #468132;
-    height: 200px;
-    width: 100vw;
-    padding-left: 420px;
-
-}
-
-header > img {
-
-    border-right: 8px #050505 solid;
-    border-radius: 15px;
-    padding: 15px;
-    width: 500px;
-
-}
-
-ul {
-
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-
-}
-
-li {
-
-    flex-basis: 48%;
-    background-color: #BDFCA7;
-    text-align: center;
-    border-radius: 15px;
-    width: 46vw;
-    height: 75px;
-    margin: 0.3vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3em;
-    font-weight: 900;
-    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-    transition: ease-in-out 0.2s;
-
-}
-
-li:hover {
-
-    background-color: #FAFAFA;
-    transition: ease-in-out 0.2s;
-
-}
-
-span > img {
-
-    position: absolute;
-    left: 210px;
-    top: 210px;
-
-}
-
-span {
-
-    position: absolute;
-    border-radius: 30%;
-    left: -170px;
-    top: -170px;
-    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);
-
-}
-
-#circle_1 {
-
-    background-color: #FFE4AE;
-    height: 490px;
-    width: 490px;
-    z-index: 3;
-
-}
-
-#circle_2 {
-
-    background-color: #FFCE6F;
-    height: 530px;
-    width: 530px;
-    z-index: 2;
-
-}
-
-#circle_3 {
-
-    background-color: #EC9D03;
-    height: 570px;
-    width: 570px;
-    z-index: 1;
-    
-
-}
-
-aside {
-
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #468132;
-    width: 400px;
-    padding: 25px;
-    padding-top: 250px;
-    align-items: center;
-
-}
-
-aside > article {
-
-    display: flex;
-    margin: 40px;
-    flex-basis: 80%;
-    width: auto;
-    padding: 10px;
-    justify-content: center;
-
-}
-
-aside > article > h3 {
-
-    font-size: 1.75em;
-    margin: 10px;
-    text-align: center;
-    border-bottom: 5px #050505 solid;
-    border-radius: 15px;
-    padding-bottom: 15px;
-
-}
-
-aside > article > p {
-
-    font-size: 1em;
-    margin: 25px;
-
-}
-
-aside > img {
-
-    height: 250px;
-    margin: 40px;
-    padding: 0px;
-    flex-basis: 80%;
-    border-radius: 15px;
-    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);
-    object-fit: cover;
-
-}
-
-main {
-
-    background-color: #F4FFC6;
-    width: calc(100% - 400px);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 50px;
-
-}
-
-main > h1 {
-
-    display: flex;
-    width: 100%;
-    font-size: 3.5vw;
-    justify-content: center;
-    align-items: center;
-    margin: 1.5vw;
-
-}
-
 main > img {
-
     flex-basis: 30%;
     border-radius: 15px;
     margin: 40px;
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);
     object-fit: cover;
-
 }
 
 article {
-
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -222,24 +16,18 @@ article {
     padding: 50px;
     margin: 40px;
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);
-
 }
 
 article > h2 {
-
     font-size: 2vw;
     margin-bottom: 30px;
-
 }
 
 article > p {
-
     font-size: 1vw;
-
 }
 
 table {
-
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -251,56 +39,22 @@ table {
     outline: 5px solid #F4FFC6;
     outline-offset: -3px;
     border-radius: 15px;
-
 }
 
 th {
-
     padding: 2vw;
     border: 2px solid;
     font-size: 1vw;
     background-color: #EC9D03;
-
 }
 
 td {
-
     padding: 2vw;
     border: 2px solid;
     font-size: 0.8vw;
     text-align: center;
-   
 }
 
 .first {
-
     background-color: #BDFCA7;
-
-}
-
-footer {
-
-    display: flex;
-    background-color: #A16262;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-
-}
-
-footer > img {
-
-    width: 4vw;
-    margin: 30px;
-
-}
-
-footer > p {
-
-    color:#FAFAFA;
-    text-align: center;
-    font-size: 1vw;
-    font-weight: 900;
-    width: 6vw;
-
 }
