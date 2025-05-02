@@ -40,7 +40,7 @@ header img {
     margin-right: 1rem;
 }
 
-header img:hover {
+header img:hover, footer img:hover {
     transform: rotate(10deg);
 }
 
@@ -53,6 +53,7 @@ header h1 {
 section {
     display: flex;
     align-items: center;
+    gap: 1rem;
 }
 
 ul {
@@ -89,7 +90,7 @@ a::before {
     transition: 0.25s ease;
 }
 
-a:hover::before {
+header a:hover::before {
     transform: translateX(0);
 }
 
@@ -124,6 +125,7 @@ a:hover i {
     border-radius: 25%;
     background-color: var(--light-color);
     color: var(--dark-color);
+    cursor: pointer;
 }
 
 .theme-toggle:hover {
@@ -132,7 +134,7 @@ a:hover i {
 
 .theme-toggle:hover i {
     color: var(--white-color);
-    transform: rotate(20deg)
+    transform: rotate(10deg)
 }
 
 .theme-toggle i {
@@ -204,22 +206,41 @@ main > h1 {
 }
 
 footer {
+    background-color: var(--white-color);
     display: flex;
-    background-color: #A16262;
-    width: 100%;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 -4px 20px var(--shadow-color);
 }
 
-footer > img {
-    width: 4vw;
-    margin: 30px;
+footer:hover {
+    box-shadow: 0 4px 20px var(--primary-color);
 }
 
-footer > p {
-    color: #FAFAFA;
-    text-align: center;
-    font-size: 1vw;
-    font-weight: 900;
-    width: 6vw;
+footer img {
+    width: 30px;
+}
+
+footer p {
+    color: var(--dark-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-left: 3px solid var(--light-color);
+}
+
+footer span {
+    color: var(--dark-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background-color: var(--light-color);
+    transition: 0.3s ease;
+}
+
+footer span:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
