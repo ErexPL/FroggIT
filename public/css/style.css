@@ -237,10 +237,44 @@ footer span {
     padding: 0.5rem 1rem;
     border-radius: 20px;
     background-color: var(--light-color);
-    transition: 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
 }
 
 footer span:hover {
     background-color: var(--primary-color);
     color: var(--white-color);
+}
+
+footer span:active {
+    transform: scale(0.95);
+}
+
+footer span::after {
+    content: "Kliknij, aby skopiować";
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25s ease;
+    white-space: nowrap;
+}
+
+footer span:hover::after {
+    opacity: 0.75;
+    transform: translateX(-50%) scale(1);
+}
+
+footer span.copied::after {
+    content: "Skopiowano!";
+    opacity: 0.75;
+    transform: translateX(-50%) scale(1);
 }

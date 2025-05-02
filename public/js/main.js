@@ -1,4 +1,5 @@
 const themeToggle = document.querySelector('.theme-toggle');
+const authorSpan = document.querySelector('footer span');
 let darkMode = localStorage.getItem('darkMode') === 'true';
 
 const updateTheme = () => {
@@ -17,12 +18,25 @@ const updateTheme = () => {
     }
 };
 
-if (themeToggle) {
+updateTheme();
+themeToggle.addEventListener('click', () => {
+    darkMode = !darkMode;
+    localStorage.setItem('darkMode', darkMode);
     updateTheme();
+});
 
-    themeToggle.addEventListener('click', () => {
-        darkMode = !darkMode;
-        localStorage.setItem('darkMode', darkMode);
-        updateTheme();
-    });
-}
+authorSpan.addEventListener('click', () => {
+    const textarea = document.createElement('textarea');
+    textarea.value = authorSpan.textContent;
+    textarea.style.position = 'absolute';
+    textarea.style.left = '-9999px';
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+    authorSpan.classList.add('copied');
+            
+    setTimeout(() => {
+        authorSpan.classList.remove('copied');
+    }, 2500);
+});
