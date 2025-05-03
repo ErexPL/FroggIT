@@ -2,12 +2,6 @@ const themeToggle = document.querySelector('.theme-toggle');
 const authorSpan = document.querySelector('footer span');
 let darkMode = localStorage.getItem('darkMode') === 'true';
 
-AOS.init({
-    duration: 1000,
-    once: true,
-    mirror: false
-});
-
 const updateTheme = () => {
     if (darkMode) {
         document.documentElement.setAttribute('data-theme', 'dark');

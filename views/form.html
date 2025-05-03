@@ -7,10 +7,18 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/form.css">
+    <link rel="stylesheet" href="/css/loading.css">
     <link rel="icon" href="/imgs/logo.png">
     <title>FroggIT | Zajęcia Online</title>
 </head>
 <body>
+    <div class="loading-screen">
+        <div class="loading-animation"></div>
+        <div class="loading-text">Loading... 0%</div>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
     <header>
         <section>
             <img src="/imgs/logo.png" alt="logo" class="logo">
@@ -28,53 +36,57 @@
             <div class="theme-toggle"><i class="fa-solid fa-sun"></i></div>
         </section>
     </header>
-    <aside>
-        <img src="/imgs/form/frog1.png" alt="żaba1" data-aos="fade-right">
-        <article data-aos="fade-left">
-            <h3>Niesamowite żaby</h3>
-            <p>Istnieje żaba, która potrafi szybować - żaba latająca jawajska. Ciekawym płazem jest też szklana żabka, ponieważ jest przeźroczysta. Istnieje również żaba, której kijanka jest cztery razy większa od dorosłego, jest to żaba arlekin. Żaba, która pokonała jednym skokiem 169 centymetrów, to żaba leopardowa. Najgłośniejszy płaz to żaba rycząca, a najsilniej trujący płaz to liściołaz straszliwy. Trucizna liściołaza potrafi zabić 10 ludzi lub 20000 myszy!</p>
-        </article>
-    </aside>
-    <main>
-        <h1 data-aos="fade-up">Zajęcia Online</h1>
-        <article data-aos="fade-up" data-aos-delay="100">
-            <p>Zajęcia online o żabach to świetny sposób na poznanie fascynującego świata tych zwierząt bez wychodzenia z domu. Podczas takich zajęć uczestnicy będą mieli możliwość nauczenia się wiele interesujących rzeczy o żabach, takich jak ich tryb życia, anatomiczne cechy, zachowania i wiele innych. Zajęcia będą prowadzone przez doświadczonych prowadzących, którzy zaprezentują wizualizacje, zdjęcia oraz filmy w celu ułatwienia zrozumienia materiału. Uczestnicy będą mieli możliwość zadawania pytań i uczestnictwa w interaktywnych dyskusjach z prowadzącymi oraz innymi uczestnikami. Podczas tych zajęć, uczestnicy będą mieli okazję poznać różnorodność gatunków żab i ich środowiska naturalne, a także zrozumieć ich rolę w ekosystemie. Będą mieli możliwość zapoznania się z najnowszymi badaniami naukowymi dotyczącymi żab i odkryć, jakie zagrożenia czyhają na te zwierzęta i jak można im pomóc.<br><br>Jeśli jesteś zainteresowany/a udziałem w zajęciach online o żabach, zachęcamy do wypełnienia poniższego formularza zapisowego. Będziemy mieli przyjemność poinformować Cię o nadchodzących terminach i szczegółach dotyczących zajęć. Do zobaczenia na zajęciach!</p>
-        </article>
-        <h1 data-aos="fade-up">Formularz</h1>
-        <form data-aos="fade-up" data-aos-delay="100">
-            <label for="imie" data-aos="fade-right" data-aos-delay="200">*Imię:
-                <input type="text" id="imie" name="imie" placeholder="Jan" required>
-            </label>
-            <label for="nazwisko" data-aos="fade-left" data-aos-delay="200">*Nazwisko:
-                <input type="text" id="nazwisko" name="nazwisko" placeholder="Kowalski" required>
-            </label>
-            <label for="email" data-aos="fade-right" data-aos-delay="300">*Adres e-mail:
-                <input type="email" id="email" name="email" placeholder="jan.kowalski@gmail.com" required>
-            </label>
-            <label for="telefon" data-aos="fade-left" data-aos-delay="300">Numer telefonu:
-                <input type="tel" id="telefon" name="telefon" placeholder="123456789">
-            </label>
-            <label for="miasto" data-aos="fade-right" data-aos-delay="400">Miasto:
-                <input type="text" id="miasto" name="miasto" placeholder="Gliwice">
-            </label>
-            <label for="kod-pocztowy" data-aos="fade-left" data-aos-delay="400">Kod pocztowy:
-                <input type="text" id="kod-pocztowy" name="kod-pocztowy" placeholder="44-105">
-            </label>
-            <label for="wiadomosc" data-aos="fade-up" data-aos-delay="500">Dodatkowe informacje:
-                <textarea id="wiadomosc" name="wiadomosc" rows="4" cols="50" placeholder="Nie posiadam kamerki / mikrofonu"></textarea>
-            </label>
-            <fieldset data-aos="fade-up" data-aos-delay="600">
-                <label id="choice_label">*Preferowany termin zajęć:</label>
-                <input type="radio" id="termin-1" name="termin" value="1" checked>
-                <label for="termin-1">Wtorek, godzina 18:00-19:30</label>
-                <input type="radio" id="termin-2" name="termin" value="2">
-                <label for="termin-2">Piątek, godzina 15:00-16:30</label>
-                <input type="radio" id="termin-3" name="termin" value="3">
-                <label for="termin-3">Niedziela, godzina 10:00-11:30</label>
-            </fieldset>
-            <input type="submit" value="Wyślij zgłoszenie" data-aos="fade-in" data-aos-delay="700">
-        </form>
-    </main>
+    <div id="page-content" class="page-transition page-transition-active">
+        <aside>
+            <img src="/imgs/form/frog1.png" alt="żaba1" data-aos="fade-right">
+            <article data-aos="fade-left">
+                <h3>Niesamowite żaby</h3>
+                <p>Istnieje żaba, która potrafi szybować - żaba latająca jawajska. Ciekawym płazem jest też szklana żabka, ponieważ jest przeźroczysta. Istnieje również żaba, której kijanka jest cztery razy większa od dorosłego, jest to żaba arlekin. Żaba, która pokonała jednym skokiem 169 centymetrów, to żaba leopardowa. Najgłośniejszy płaz to żaba rycząca, a najsilniej trujący płaz to liściołaz straszliwy. Trucizna liściołaza potrafi zabić 10 ludzi lub 20000 myszy!</p>
+            </article>
+        </aside>
+        <main>
+            <h1 data-aos="fade-up">Zajęcia Online</h1>
+            <article data-aos="fade-up" data-aos-delay="100">
+                <p>Zajęcia online o żabach to świetny sposób na poznanie fascynującego świata tych zwierząt bez wychodzenia z domu. Podczas takich zajęć uczestnicy będą mieli możliwość nauczenia się wiele interesujących rzeczy o żabach, takich jak ich tryb życia, anatomiczne cechy, zachowania i wiele innych. Zajęcia będą prowadzone przez doświadczonych prowadzących, którzy zaprezentują wizualizacje, zdjęcia oraz filmy w celu ułatwienia zrozumienia materiału. Uczestnicy będą mieli możliwość zadawania pytań i uczestnictwa w interaktywnych dyskusjach z prowadzącymi oraz innymi uczestnikami. Podczas tych zajęć, uczestnicy będą mieli okazję poznać różnorodność gatunków żab i ich środowiska naturalne, a także zrozumieć ich rolę w ekosystemie. Będą mieli możliwość zapoznania się z najnowszymi badaniami naukowymi dotyczącymi żab i odkryć, jakie zagrożenia czyhają na te zwierzęta i jak można im pomóc.<br><br>Jeśli jesteś zainteresowany/a udziałem w zajęciach online o żabach, zachęcamy do wypełnienia poniższego formularza zapisowego. Będziemy mieli przyjemność poinformować Cię o nadchodzących terminach i szczegółach dotyczących zajęć. Do zobaczenia na zajęciach!</p>
+            </article>
+            <h1 data-aos="fade-up">Formularz</h1>
+            <form data-aos="fade-up" data-aos-delay="100">
+                <label for="imie" data-aos="fade-right" data-aos-delay="200">*Imię:
+                    <input type="text" id="imie" name="imie" placeholder="Jan" required>
+                </label>
+                <label for="nazwisko" data-aos="fade-left" data-aos-delay="200">*Nazwisko:
+                    <input type="text" id="nazwisko" name="nazwisko" placeholder="Kowalski" required>
+                </label>
+                <label for="email" data-aos="fade-right" data-aos-delay="300">*Adres e-mail:
+                    <input type="email" id="email" name="email" placeholder="jan.kowalski@gmail.com" required>
+                </label>
+                <label for="telefon" data-aos="fade-left" data-aos-delay="300">Numer telefonu:
+                    <input type="tel" id="telefon" name="telefon" placeholder="123456789">
+                </label>
+                <label for="miasto" data-aos="fade-right" data-aos-delay="400">Miasto:
+                    <input type="text" id="miasto" name="miasto" placeholder="Gliwice">
+                </label>
+                <label for="kod-pocztowy" data-aos="fade-left" data-aos-delay="400">Kod pocztowy:
+                    <input type="text" id="kod-pocztowy" name="kod-pocztowy" placeholder="44-105">
+                </label>
+                <label for="wiadomosc" data-aos="fade-up" data-aos-delay="500">Dodatkowe informacje:
+                    <textarea id="wiadomosc" name="wiadomosc" rows="4" cols="50" placeholder="Nie posiadam kamerki / mikrofonu"></textarea>
+                </label>
+                <fieldset data-aos="fade-up" data-aos-delay="600">
+                    <label id="choice_label">*Preferowany termin zajęć:</label>
+                    <input type="radio" id="termin-1" name="termin" value="1" checked>
+                    <label for="termin-1">Wtorek, godzina 18:00-19:30</label>
+                    <input type="radio" id="termin-2" name="termin" value="2">
+                    <label for="termin-2">Piątek, godzina 15:00-16:30</label>
+                    <input type="radio" id="termin-3" name="termin" value="3">
+                    <label for="termin-3">Niedziela, godzina 10:00-11:30</label>
+                </fieldset>
+                <label for="submit" data-aos="fade-up" data-aos-delay="700">
+                    <input type="submit" value="Wyślij zgłoszenie">
+                </label>
+            </form>
+        </main>
+    </div>
     <footer>
         <section>
             <img src="/imgs/logo.png" alt="logo" class="logo">
@@ -87,5 +99,6 @@
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/js/main.js"></script>
+    <script src="/js/navigation.js"></script>
 </body>
 </html>

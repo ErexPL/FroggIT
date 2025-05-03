@@ -23,9 +23,9 @@
     content: '';
     position: absolute;
     left: 0;
-    width: 1500%;
+    width: 2000%;
     height: 100%;
-    background-size: auto 100%;
+    background-size: 5% auto;
     background-image:
         url('/imgs/gallery/frog2.png'), url('/imgs/gallery/frog3.png'),
         url('/imgs/gallery/frog4.png'), url('/imgs/gallery/frog5.png'),
@@ -52,7 +52,6 @@
 }
 
 .hero-content {
-    z-index: 1;
     padding: 2rem;
 }
 

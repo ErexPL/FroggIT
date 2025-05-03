@@ -46,7 +46,7 @@ label {
     font-weight: 500;
 }
 
-label[for="wiadomosc"] {
+label[for="wiadomosc"], label[for="submit"] {
     grid-column: 1 / -1;
 }
 
@@ -146,5 +146,4 @@ input[type="submit"] {
     letter-spacing: 1px;
     border: none;
     cursor: pointer;
-    transition: 0.3s ease-in-out !important;
 }

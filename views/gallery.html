@@ -7,10 +7,18 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/gallery.css">
+    <link rel="stylesheet" href="/css/loading.css">
     <link rel="icon" href="/imgs/logo.png">
     <title>FroggIT | Galeria</title>
 </head>
 <body>
+    <div class="loading-screen">
+        <div class="loading-animation"></div>
+        <div class="loading-text">Loading... 0%</div>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
     <header>
         <section>
             <img src="/imgs/logo.png" alt="logo" class="logo">
@@ -28,30 +36,32 @@
             <div class="theme-toggle"><i class="fa-solid fa-sun"></i></div>
         </section>
     </header>
-    <aside>
-        <img src="/imgs/gallery/frog1.png" alt="żaba1" data-aos="fade-right">
-        <article data-aos="fade-left">
-            <h3>Najrzadsza żaba na świecie</h3>
-            <p>Żaba gęborodna to bardzo ciekawa żaba. Skąd pochodzi nazwa? W żołądku samicy skrzek przechodzi całkowity rozwój. 10 lat po odkryciu, w jaki sposób ten płaz się rozmnaża, postanowiono go zbadać. Pojawiła się jednak niespodziewana przeszkoda - nie udało się znaleźć ani jednej żaby tego gatunku. Nie wiadomo co dokładnie im zaszkodziło, gdyż niedawno temu były pospolite. Zagadka pozostaje nierozwiązana do dziś.</p>
-        </article>
-    </aside>
-    <main>
-        <h1 data-aos="fade-up">Galeria</h1>
-        <section>
-            <img src="/imgs/gallery/frog2.png" alt="żaba2" data-aos="fade-in">
-            <img src="/imgs/gallery/frog3.png" alt="żaba3" data-aos="fade-in" data-aos-delay="100">
-            <img src="/imgs/gallery/frog4.png" alt="żaba4" data-aos="fade-in" data-aos-delay="200">
-            <img src="/imgs/gallery/frog5.png" alt="żaba5" data-aos="fade-in" data-aos-delay="300">
-            <img src="/imgs/gallery/frog6.png" alt="żaba6" data-aos="fade-in">
-            <img src="/imgs/gallery/frog7.png" alt="żaba7" data-aos="fade-in" data-aos-delay="100">
-            <img src="/imgs/gallery/frog8.png" alt="żaba8" data-aos="fade-in" data-aos-delay="200">
-            <img src="/imgs/gallery/frog9.png" alt="żaba9" data-aos="fade-in" data-aos-delay="300">
-            <img src="/imgs/gallery/frog10.png" alt="żaba10" data-aos="fade-in">
-            <img src="/imgs/gallery/frog11.png" alt="żaba11" data-aos="fade-in" data-aos-delay="100">
-            <img src="/imgs/gallery/frog12.png" alt="żaba12" data-aos="fade-in" data-aos-delay="200">
-            <img src="/imgs/gallery/frog13.png" alt="żaba13" data-aos="fade-in" data-aos-delay="300">
-        </section>
-    </main>
+    <div id="page-content" class="page-transition page-transition-active">
+        <aside>
+            <img src="/imgs/gallery/frog1.png" alt="żaba1" data-aos="fade-right">
+            <article data-aos="fade-left">
+                <h3>Najrzadsza żaba na świecie</h3>
+                <p>Żaba gęborodna to bardzo ciekawa żaba. Skąd pochodzi nazwa? W żołądku samicy skrzek przechodzi całkowity rozwój. 10 lat po odkryciu, w jaki sposób ten płaz się rozmnaża, postanowiono go zbadać. Pojawiła się jednak niespodziewana przeszkoda - nie udało się znaleźć ani jednej żaby tego gatunku. Nie wiadomo co dokładnie im zaszkodziło, gdyż niedawno temu były pospolite. Zagadka pozostaje nierozwiązana do dziś.</p>
+            </article>
+        </aside>
+        <main>
+            <h1 data-aos="fade-up">Galeria</h1>
+            <section>
+                <img src="/imgs/gallery/frog2.png" alt="żaba2" data-aos="fade-in">
+                <img src="/imgs/gallery/frog3.png" alt="żaba3" data-aos="fade-in" data-aos-delay="100">
+                <img src="/imgs/gallery/frog4.png" alt="żaba4" data-aos="fade-in" data-aos-delay="200">
+                <img src="/imgs/gallery/frog5.png" alt="żaba5" data-aos="fade-in" data-aos-delay="300">
+                <img src="/imgs/gallery/frog6.png" alt="żaba6" data-aos="fade-in">
+                <img src="/imgs/gallery/frog7.png" alt="żaba7" data-aos="fade-in" data-aos-delay="100">
+                <img src="/imgs/gallery/frog8.png" alt="żaba8" data-aos="fade-in" data-aos-delay="200">
+                <img src="/imgs/gallery/frog9.png" alt="żaba9" data-aos="fade-in" data-aos-delay="300">
+                <img src="/imgs/gallery/frog10.png" alt="żaba10" data-aos="fade-in">
+                <img src="/imgs/gallery/frog11.png" alt="żaba11" data-aos="fade-in" data-aos-delay="100">
+                <img src="/imgs/gallery/frog12.png" alt="żaba12" data-aos="fade-in" data-aos-delay="200">
+                <img src="/imgs/gallery/frog13.png" alt="żaba13" data-aos="fade-in" data-aos-delay="300">
+            </section>
+        </main>
+    </div>
     <footer>
         <section>
             <img src="/imgs/logo.png" alt="logo" class="logo">
@@ -64,5 +74,6 @@
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/js/main.js"></script>
+    <script src="/js/navigation.js"></script>
 </body>
 </html>

@@ -7,10 +7,18 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/loading.css">
     <link rel="icon" href="/imgs/logo.png">
     <title>FroggIT | Strona Główna</title>
 </head>
 <body>
+    <div class="loading-screen">
+        <div class="loading-animation"></div>
+        <div class="loading-text">Loading... 0%</div>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
     <header>
         <section>
             <img src="/imgs/logo.png" alt="logo" class="logo">
@@ -28,101 +36,103 @@
             <div class="theme-toggle"><i class="fa-solid fa-sun"></i></div>
         </section>
     </header>
-    <div class="hero-section">
-        <div class="hero-carousel"></div>
-        <div class="hero-content" data-aos="fade-up">
-            <h1>Intrygujący Świat Żab</h1>
-            <p>Odkryj z nami niezwykłe gatunki żab i ich fascynujące historie</p>
+    <div id="page-content" class="page-transition page-transition-active">
+        <div class="hero-section">
+            <div class="hero-carousel"></div>
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Intrygujący Świat Żab</h1>
+                <p>Odkryj z nami niezwykłe gatunki żab i ich fascynujące historie</p>
+            </div>
         </div>
+        <aside>
+            <article data-aos="fade-right">
+                <h3>Największa żaba świata</h3>
+                <p>Trudno wyobrazić sobie żabę o wielkości zająca, ale taka właśnie jest żaba goliat. Długość ciała goliata osiąga maksymalnie 40 cm, a waga nawet 4 kg. Ten płaz jest bardzo płochliwy, przez co jest rzadko spotykany. Gatunek jest zagrożony, ponieważ posiada smaczne mięso. Z tego powodu jest objęty ochroną.</p>
+            </article>
+            <img src="/imgs/index/frog1.png" alt="żaba1" data-aos="fade-left">
+        </aside>
+        <main>
+            <h1 data-aos="fade-up">Najbardziej znane gatunki żab</h1>
+            <div class="species-box">
+                <div class="species-card" data-aos="zoom-in">
+                    <img src="/imgs/index/frog2.png" alt="żaba2" class="species-image">
+                    <div class="species-content">
+                        <h2>Chwytnica kolorowa</h2>
+                        <p>Chwytnica kolorowa, znana również jako rzekotka czerwonooka, to jedna z najpiękniejszych i najbardziej charakterystycznych rzekotek. Charakteryzuje się czerwonymi oczami, niebieskimi smugami na bokach i udach oraz pomarańczowymi palcami. Jej ciało jest bardzo delikatne. Dzięki specjalnym zgrubieniom na końcach palców, potrafi przykleić się do liści. Co ciekawe może też przykleić się do przeciwnika. Jej pokarm to między innymi świerszcze, muchy i ćmy. Ciało samicy mierzy do 8 cm, a samca do 10 cm. Występuje w Ameryce Środkowej.</p>
+                    </div>
+                </div>
+                <div class="species-card" data-aos="zoom-in">
+                    <img src="/imgs/index/frog3.png" alt="żaba3" class="species-image">
+                    <div class="species-content">
+                        <h2>Drzewołaz karłowaty</h2>
+                        <p>Drzewołaz karłowaty to najmniejszy drzewołaz na świecie. Występuje w Ameryce Środkowej. Charakteryzuje się połyskującą, pomarańczowoczerwoną głową. Żywi się on głównie małymi stawonogami, takimi jak mrówki czy termity, które zbiera z powierzchni liści i gałęzi. Drzewołaz karłowaty jest bardzo agresywny i potrafi skoczyć na wroga, jeśli zostanie sprowokowany. Ciekawy jest zwyczaj tych płazów - wróg po przegranej walce może bezpiecznie odejść. Ten mały drzewołaz osiąga około 2 cm.</p>
+                    </div>
+                </div>
+                <div class="species-card" data-aos="zoom-in">
+                    <img src="/imgs/index/frog4.png" alt="żaba4" class="species-image">
+                    <div class="species-content">
+                        <h2>Kumak dalekowschodni</h2>
+                        <p>Kumak dalekowschodni jest znany między innymi dzięki jego ciekawej kolorystyce. Posiada on jaskrawy brzuch, który pokazuję przeciwnikowi, aby go poinformować, że jest trujący. To zachowanie znane jest jako odruch kumaka. Płaz ten posiada także wzór na plecach, który służy jako kamuflaż. Zamieszkuje on tereny wschodniej Syberii, Korei i północno-wschodnich Chin. Żyje w wodzie, najczęściej w nizinnych rzekach. Nietypowe jest to, że jego język nie wyciąga się tak jak u innych żab i kumaków oraz to, że jego długość życia osiąga aż 20 lat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="comparison-section" data-aos="fade-up">
+                <h1>Porównanie gatunków żab</h1>
+                <div class="table-wrapper">
+                    <table>
+                        <tr>
+                            <th>Nazwa płaza</th>
+                            <th>Długość</th>
+                            <th>Waga</th>
+                            <th>Występowanie</th>
+                            <th>Tryb życia</th>
+                            <th>Status</th>      
+                        </tr>
+                        <tr>
+                            <td class="first">Chwytnica kolorowa</td>
+                            <td>9cm</td>
+                            <td>11g</td>
+                            <td>Ameryka Środkowa</td>
+                            <td>Nadrzewny, aktywny nocą</td>
+                            <td>Liczny, ale liczebność maleje</td>
+                        </tr>
+                        <tr>
+                            <td class="first">Drzewołaz karłowaty</td>
+                            <td>2cm</td>
+                            <td>4g</td>
+                            <td>Ameryka Środkowa</td>
+                            <td>Lądowy, aktywny w dzień</td>
+                            <td>Bardzo liczny</td>
+                        </tr>
+                        <tr>
+                            <td class="first">Kumak dalekowschodni</td>
+                            <td>5cm</td>
+                            <td>56g</td>
+                            <td>Wschodnia Syberia, Korea, część Chin</td>
+                            <td>Wodny, aktywny w dzień</td>
+                            <td>Liczny</td>
+                        </tr>
+                        <tr>
+                            <td class="first">Kumak górski</td>
+                            <td>5cm</td>
+                            <td>35g</td>
+                            <td>Tereny górzyste Europy środkowej, zachodniej i południowej</td>
+                            <td>Wodny, aktywny w dzień</td>
+                            <td>Liczny</td>
+                        </tr>
+                        <tr>
+                            <td class="first">Żaba rycząca</td>
+                            <td>20cm</td>
+                            <td>900g</td>
+                            <td>Ameryka Północna</td>
+                            <td>Lądowo-wodny, aktywny nocą</td>
+                            <td>Liczny</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
     </div>
-    <aside>
-        <article data-aos="fade-right">
-            <h3>Największa żaba świata</h3>
-            <p>Trudno wyobrazić sobie żabę o wielkości zająca, ale taka właśnie jest żaba goliat. Długość ciała goliata osiąga maksymalnie 40 cm, a waga nawet 4 kg. Ten płaz jest bardzo płochliwy, przez co jest rzadko spotykany. Gatunek jest zagrożony, ponieważ posiada smaczne mięso. Z tego powodu jest objęty ochroną.</p>
-        </article>
-        <img src="/imgs/index/frog1.png" alt="żaba1" data-aos="fade-left">
-    </aside>
-    <main>
-        <h1 data-aos="fade-up">Najbardziej znane gatunki żab</h1>
-        <div class="species-box">
-            <div class="species-card" data-aos="zoom-in">
-                <img src="/imgs/index/frog2.png" alt="żaba2" class="species-image">
-                <div class="species-content">
-                    <h2>Chwytnica kolorowa</h2>
-                    <p>Chwytnica kolorowa, znana również jako rzekotka czerwonooka, to jedna z najpiękniejszych i najbardziej charakterystycznych rzekotek. Charakteryzuje się czerwonymi oczami, niebieskimi smugami na bokach i udach oraz pomarańczowymi palcami. Jej ciało jest bardzo delikatne. Dzięki specjalnym zgrubieniom na końcach palców, potrafi przykleić się do liści. Co ciekawe może też przykleić się do przeciwnika. Jej pokarm to między innymi świerszcze, muchy i ćmy. Ciało samicy mierzy do 8 cm, a samca do 10 cm. Występuje w Ameryce Środkowej.</p>
-                </div>
-            </div>
-            <div class="species-card" data-aos="zoom-in">
-                <img src="/imgs/index/frog3.png" alt="żaba3" class="species-image">
-                <div class="species-content">
-                    <h2>Drzewołaz karłowaty</h2>
-                    <p>Drzewołaz karłowaty to najmniejszy drzewołaz na świecie. Występuje w Ameryce Środkowej. Charakteryzuje się połyskującą, pomarańczowoczerwoną głową. Żywi się on głównie małymi stawonogami, takimi jak mrówki czy termity, które zbiera z powierzchni liści i gałęzi. Drzewołaz karłowaty jest bardzo agresywny i potrafi skoczyć na wroga, jeśli zostanie sprowokowany. Ciekawy jest zwyczaj tych płazów - wróg po przegranej walce może bezpiecznie odejść. Ten mały drzewołaz osiąga około 2 cm.</p>
-                </div>
-            </div>
-            <div class="species-card" data-aos="zoom-in">
-                <img src="/imgs/index/frog4.png" alt="żaba4" class="species-image">
-                <div class="species-content">
-                    <h2>Kumak dalekowschodni</h2>
-                    <p>Kumak dalekowschodni jest znany między innymi dzięki jego ciekawej kolorystyce. Posiada on jaskrawy brzuch, który pokazuję przeciwnikowi, aby go poinformować, że jest trujący. To zachowanie znane jest jako odruch kumaka. Płaz ten posiada także wzór na plecach, który służy jako kamuflaż. Zamieszkuje on tereny wschodniej Syberii, Korei i północno-wschodnich Chin. Żyje w wodzie, najczęściej w nizinnych rzekach. Nietypowe jest to, że jego język nie wyciąga się tak jak u innych żab i kumaków oraz to, że jego długość życia osiąga aż 20 lat.</p>
-                </div>
-            </div>
-        </div>
-        <div class="comparison-section" data-aos="fade-up">
-            <h1>Porównanie gatunków żab</h1>
-            <div class="table-wrapper">
-                <table>
-                    <tr>
-                        <th>Nazwa płaza</th>
-                        <th>Długość</th>
-                        <th>Waga</th>
-                        <th>Występowanie</th>
-                        <th>Tryb życia</th>
-                        <th>Status</th>      
-                    </tr>
-                    <tr>
-                        <td class="first">Chwytnica kolorowa</td>
-                        <td>9cm</td>
-                        <td>11g</td>
-                        <td>Ameryka Środkowa</td>
-                        <td>Nadrzewny, aktywny nocą</td>
-                        <td>Liczny, ale liczebność maleje</td>
-                    </tr>
-                    <tr>
-                        <td class="first">Drzewołaz karłowaty</td>
-                        <td>2cm</td>
-                        <td>4g</td>
-                        <td>Ameryka Środkowa</td>
-                        <td>Lądowy, aktywny w dzień</td>
-                        <td>Bardzo liczny</td>
-                    </tr>
-                    <tr>
-                        <td class="first">Kumak dalekowschodni</td>
-                        <td>5cm</td>
-                        <td>56g</td>
-                        <td>Wschodnia Syberia, Korea, część Chin</td>
-                        <td>Wodny, aktywny w dzień</td>
-                        <td>Liczny</td>
-                    </tr>
-                    <tr>
-                        <td class="first">Kumak górski</td>
-                        <td>5cm</td>
-                        <td>35g</td>
-                        <td>Tereny górzyste Europy środkowej, zachodniej i południowej</td>
-                        <td>Wodny, aktywny w dzień</td>
-                        <td>Liczny</td>
-                    </tr>
-                    <tr>
-                        <td class="first">Żaba rycząca</td>
-                        <td>20cm</td>
-                        <td>900g</td>
-                        <td>Ameryka Północna</td>
-                        <td>Lądowo-wodny, aktywny nocą</td>
-                        <td>Liczny</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </main>
     <footer>
         <section>
             <img src="/imgs/logo.png" alt="logo" class="logo">
@@ -135,5 +145,6 @@
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/js/main.js"></script>
+    <script src="/js/navigation.js"></script>
 </body>
 </html>
