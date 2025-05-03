@@ -1,5 +1,5 @@
 .hero-section {
-    height: 48vh;
+    height: calc(100vh - 72px);
     background: linear-gradient(135deg, var(--secondary-color) 0%, var(--light-color) 100%);
     display: flex;
     justify-content: center;
@@ -23,29 +23,26 @@
     content: '';
     position: absolute;
     left: 0;
-    width: 1200%;
+    width: 1500%;
     height: 100%;
-    background: 
-        url('/imgs/gallery/frog2.png') 0% center/5% no-repeat,
-        url('/imgs/gallery/frog3.png') 5% center/5% no-repeat,
-        url('/imgs/gallery/frog4.png') 10% center/5% no-repeat,
-        url('/imgs/gallery/frog5.png') 15% center/5% no-repeat,
-        url('/imgs/gallery/frog6.png') 20% center/5% no-repeat,
-        url('/imgs/gallery/frog7.png') 25% center/5% no-repeat,
-        url('/imgs/gallery/frog8.png') 30% center/5% no-repeat,
-        url('/imgs/gallery/frog9.png') 35% center/5% no-repeat,
-        url('/imgs/gallery/frog10.png') 40% center/5% no-repeat,
-        url('/imgs/gallery/frog11.png') 45% center/5% no-repeat,
-        url('/imgs/gallery/frog2.png') 50% center/5% no-repeat,
-        url('/imgs/gallery/frog3.png') 55% center/5% no-repeat,
-        url('/imgs/gallery/frog4.png') 60% center/5% no-repeat,
-        url('/imgs/gallery/frog5.png') 65% center/5% no-repeat,
-        url('/imgs/gallery/frog6.png') 70% center/5% no-repeat,
-        url('/imgs/gallery/frog7.png') 75% center/5% no-repeat,
-        url('/imgs/gallery/frog8.png') 80% center/5% no-repeat,
-        url('/imgs/gallery/frog9.png') 85% center/5% no-repeat,
-        url('/imgs/gallery/frog10.png') 90% center/5% no-repeat,
-        url('/imgs/gallery/frog11.png') 95% center/5% no-repeat;
+    background-size: auto 100%;
+    background-image:
+        url('/imgs/gallery/frog2.png'), url('/imgs/gallery/frog3.png'),
+        url('/imgs/gallery/frog4.png'), url('/imgs/gallery/frog5.png'),
+        url('/imgs/gallery/frog6.png'), url('/imgs/gallery/frog7.png'),
+        url('/imgs/gallery/frog8.png'), url('/imgs/gallery/frog9.png'),
+        url('/imgs/gallery/frog10.png'), url('/imgs/gallery/frog11.png'),
+        url('/imgs/gallery/frog2.png'), url('/imgs/gallery/frog3.png'),
+        url('/imgs/gallery/frog4.png'), url('/imgs/gallery/frog5.png'),
+        url('/imgs/gallery/frog6.png'), url('/imgs/gallery/frog7.png'),
+        url('/imgs/gallery/frog8.png'), url('/imgs/gallery/frog9.png'),
+        url('/imgs/gallery/frog10.png'), url('/imgs/gallery/frog11.png');
+    background-position:
+        0% center, 5% center, 10% center, 15% center, 20% center,
+        25% center, 30% center, 35% center, 40% center, 45% center,
+        50% center, 55% center, 60% center, 65% center, 70% center,
+        75% center, 80% center, 85% center, 90% center, 95% center;
+    background-repeat: no-repeat;
     animation: carouselSlide 100s linear infinite;
 }
 
