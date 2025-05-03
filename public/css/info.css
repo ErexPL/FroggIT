@@ -1,0 +1,44 @@
+main article {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem;
+    background: var(--white-color);
+    border-radius: 24px;
+    box-shadow: 0 10px 20px var(--shadow-color);
+    position: relative;
+}
+
+main article p {
+    color: var(--dark-color);
+    line-height: 2;
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+    position: relative;
+    z-index: 1;
+}
+
+main article img {
+    max-width: 75%;
+    border-radius: 24px;
+    margin: 3rem auto;
+    display: block;
+    box-shadow: 0 4px 20px var(--shadow-color);
+    animation: float2 6s ease-in-out infinite;
+}
+
+@keyframes float2 {
+    0% { transform: translateX(-10px) rotate(-1deg); }
+    50% { transform: translateX(10px) rotate(1deg); }
+    100% { transform: translateX(-10px) rotate(-1deg); }
+}
+
+#short {
+    position: relative;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-left: 3px solid var(--primary-color);
+    background: var(--light-color);
+    border-radius: 0 24px 24px 0;
+    font-style: italic;
+    color: var(--dark-color);
+}

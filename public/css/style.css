@@ -24,7 +24,12 @@
     padding: 0;
     font-family: "Cascadia Code", sans-serif;
     scroll-behavior: smooth;
-    transition: 0.3s ease;
+    transition: 0.3s ease-in-out;
+}
+
+img:not(.logo) {
+    aspect-ratio: 4/3;
+    object-fit: cover;
 }
 
 body {
@@ -115,7 +120,7 @@ a::before {
     height: 2.4px;
     background-color: var(--primary-color);
     transform: translateX(-100%);
-    transition: 0.3s ease;
+    transition: 0.3s ease-in-out;
 }
 
 header a:hover::before {
@@ -145,8 +150,8 @@ a:hover i {
 }
 
 .theme-toggle {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,12 +167,96 @@ a:hover i {
 
 .theme-toggle:hover i {
     color: var(--white-color);
-    transform: rotate(10deg)
 }
 
 .theme-toggle i {
     color: var(--primary-color);
     margin-right: 0;
+}
+
+aside {
+    padding: 3rem;
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    color: var(--white-color);
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    max-height: 600px;
+}
+
+aside::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+aside article {
+    flex: 2;
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+aside article h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, #fff, rgba(255,255,255,0.8));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+aside article p {
+    line-height: 1.8;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+aside img {
+    flex: 1;
+    max-width: 350px;
+    border-radius: 24px;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(5px) rotate(-2deg); }
+    50% { transform: translateY(-5px) rotate(2deg); }
+    100% { transform: translateY(5px) rotate(-2deg); }
+}
+
+main {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, var(--light-color) 0%, var(--white-color) 100%);
+}
+
+main h1 {
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 2.8rem;
+    position: relative;
+}
+
+main h1::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    border-radius: 2px;
 }
 
 footer {
@@ -229,7 +318,7 @@ footer span::after {
     font-size: 0.6rem;
     opacity: 0;
     pointer-events: none;
-    transition: 0.3s ease;
+    transition: 0.3s ease-in-out;
     white-space: nowrap;
 }
 
@@ -242,4 +331,8 @@ footer span.copied::after {
     content: "Skopiowano!";
     opacity: 0.75;
     transform: translateX(-50%) scale(1);
+}
+
+footer section:hover i {
+    transform: none;
 }

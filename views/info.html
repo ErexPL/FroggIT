@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Dawid Zyś">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/info.css">
     <link rel="icon" href="/imgs/logo.png">
@@ -12,7 +13,7 @@
 <body>
     <header>
         <section>
-            <img src="/imgs/logo.png" alt="logo">
+            <img src="/imgs/logo.png" alt="logo" class="logo">
             <h1>FroggIT</h1>
         </section>
         <nav>
@@ -28,24 +29,24 @@
         </section>
     </header>
     <aside>
-        <article>
+        <article data-aos="fade-right">
             <h3>Żaba z "długą szyją"</h3>
             <p>Żaba zwrotnogłowa to żaba, którą wyróżnia wydłużenie fragmentu ciała łączącego tułów z głową. Dzięki temu płaz potrafi poruszać głową na boki. Takiej umiejętności nie ma żaden inny płaz bezogonowy.</p>
         </article>
-        <img src="/imgs/info/frog1.png" alt="żaba_1">
+        <img src="/imgs/info/frog1.png" alt="żaba1" data-aos="fade-left">
     </aside>
     <main>
-        <h1>Hodowla</h1>
-        <article>
+        <h1 data-aos="fade-up">Hodowla</h1>
+        <article data-aos="fade-up" data-aos-delay="100">
             <p>Hodowla żab to ciekawe zajęcie dla osób zainteresowanych naturą i egzotycznymi zwierzętami. Aby jednak utrzymać żaby w zdrowiu i dobrej kondycji, należy przestrzegać kilku ważnych zasad. Pierwszym krokiem jest wybór odpowiedniej rasy żab, która najlepiej pasuje do naszych warunków i preferencji. Żaby różnią się bowiem od siebie wymaganiami dotyczącymi warunków hodowli. Właściwe warunki to kluczowy element hodowli, który obejmuje m.in. utrzymanie odpowiedniej temperatury, wilgotności i oświetlenia, a także zapewnienie żabom odpowiedniego środowiska życia, składającego się z basenu wodnego oraz lądowej części, gdzie mogą odpoczywać.</p>
             <p id="short">Kolejnym ważnym elementem jest właściwe wyżywienie żab. W zależności od rasy, żaby mogą być mięso- lub roślinożerne, co wymaga specjalnego podejścia do ich karmienia. Warto pamiętać, że podawanie żabom jedynie suchych pokarmów, takich jak granulki, nie jest wystarczające i może prowadzić do problemów zdrowotnych. W przypadku żab mięsożernych, warto zastanowić się nad podawaniem żywych pokarmów, takich jak owady, natomiast dla roślinożernych żab warto przygotować specjalne mieszanki z warzyw i owoców.</p>
-            <img src="/imgs/info/frog2.png" alt="żaba_2">
+            <img src="/imgs/info/frog2.png" alt="żaba2" data-aos="zoom-in">
             <p>Oprócz tego, hodowla żab wymaga utrzymania odpowiedniej higieny wokół zwierząt, a także regularnego monitorowania ich stanu zdrowia. W przypadku wykrycia jakichkolwiek objawów chorobowych, takich jak brak apetytu, zmiana koloru skóry czy trudności w poruszaniu się, należy jak najszybciej skontaktować się z weterynarzem specjalizującym się w opiece nad płazami. Podsumowując, hodowla żab to interesujące i wymagające zajęcie, ale jednocześnie pełne wyzwań. Prawidłowa hodowla wymaga przestrzegania kilku zasad, takich jak wybór odpowiedniej rasy, zapewnienie właściwych warunków i wyżywienia, utrzymanie higieny oraz stałe monitorowanie stanu zdrowia żab. Warto również zwrócić uwagę na potrzeby każdej konkretnej rasy, aby móc zapewnić im jak najlepsze warunki życia.</p>
         </article>
     </main>
     <footer>
         <section>
-            <img src="/imgs/logo.png" alt="logo">
+            <img src="/imgs/logo.png" alt="logo" class="logo">
             <p>FroggIT &copy;</p>
         </section>
         <section>
@@ -53,6 +54,7 @@
             <a href="https://github.com/ErexPL" class="theme-toggle" target="_blank"><i class="fa-brands fa-github"></i></a>
         </section>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/js/main.js"></script>
 </body>
 </html>

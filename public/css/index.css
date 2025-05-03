@@ -26,26 +26,26 @@
     width: 1200%;
     height: 100%;
     background: 
-        url('/imgs/gallery/frog1.png') 0% center/5% no-repeat,
-        url('/imgs/gallery/frog2.png') 5% center/5% no-repeat,
-        url('/imgs/gallery/frog3.png') 10% center/5% no-repeat,
-        url('/imgs/gallery/frog4.png') 15% center/5% no-repeat,
-        url('/imgs/gallery/frog5.png') 20% center/5% no-repeat,
-        url('/imgs/gallery/frog6.png') 25% center/5% no-repeat,
-        url('/imgs/gallery/frog7.png') 30% center/5% no-repeat,
-        url('/imgs/gallery/frog8.png') 35% center/5% no-repeat,
-        url('/imgs/gallery/frog9.png') 40% center/5% no-repeat,
-        url('/imgs/gallery/frog10.png') 45% center/5% no-repeat,
-        url('/imgs/gallery/frog1.png') 50% center/5% no-repeat,
-        url('/imgs/gallery/frog2.png') 55% center/5% no-repeat,
-        url('/imgs/gallery/frog3.png') 60% center/5% no-repeat,
-        url('/imgs/gallery/frog4.png') 65% center/5% no-repeat,
-        url('/imgs/gallery/frog5.png') 70% center/5% no-repeat,
-        url('/imgs/gallery/frog6.png') 75% center/5% no-repeat,
-        url('/imgs/gallery/frog7.png') 80% center/5% no-repeat,
-        url('/imgs/gallery/frog8.png') 85% center/5% no-repeat,
-        url('/imgs/gallery/frog9.png') 90% center/5% no-repeat,
-        url('/imgs/gallery/frog10.png') 95% center/5% no-repeat;
+        url('/imgs/gallery/frog2.png') 0% center/5% no-repeat,
+        url('/imgs/gallery/frog3.png') 5% center/5% no-repeat,
+        url('/imgs/gallery/frog4.png') 10% center/5% no-repeat,
+        url('/imgs/gallery/frog5.png') 15% center/5% no-repeat,
+        url('/imgs/gallery/frog6.png') 20% center/5% no-repeat,
+        url('/imgs/gallery/frog7.png') 25% center/5% no-repeat,
+        url('/imgs/gallery/frog8.png') 30% center/5% no-repeat,
+        url('/imgs/gallery/frog9.png') 35% center/5% no-repeat,
+        url('/imgs/gallery/frog10.png') 40% center/5% no-repeat,
+        url('/imgs/gallery/frog11.png') 45% center/5% no-repeat,
+        url('/imgs/gallery/frog2.png') 50% center/5% no-repeat,
+        url('/imgs/gallery/frog3.png') 55% center/5% no-repeat,
+        url('/imgs/gallery/frog4.png') 60% center/5% no-repeat,
+        url('/imgs/gallery/frog5.png') 65% center/5% no-repeat,
+        url('/imgs/gallery/frog6.png') 70% center/5% no-repeat,
+        url('/imgs/gallery/frog7.png') 75% center/5% no-repeat,
+        url('/imgs/gallery/frog8.png') 80% center/5% no-repeat,
+        url('/imgs/gallery/frog9.png') 85% center/5% no-repeat,
+        url('/imgs/gallery/frog10.png') 90% center/5% no-repeat,
+        url('/imgs/gallery/frog11.png') 95% center/5% no-repeat;
     animation: carouselSlide 100s linear infinite;
 }
 
@@ -71,84 +71,13 @@
     margin: 0 auto;
 }
 
-.featured-frogs {
-    padding: 3.2rem 1.6rem;
-    background-color: var(--light-color);
-}
-
-.frog-card {
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
-    max-width: 960px;
-    margin: 1.6rem auto;
-    padding: 1.6rem;
-    background: var(--white-color);
-    border-radius: 20px;
-    box-shadow: 0 10px 30px var(--shadow-color);
-    transition: transform 0.3s ease;
-}
-
-.frog-card:hover {
-    transform: translateY(-5px);
-}
-
-.frog-card.reverse {
-    flex-direction: row-reverse;
-}
-
-.card-content {
-    flex: 1;
-    padding: 0.8rem;
-}
-
-.card-content h3 {
-    font-size: 1.6rem;
-    color: var(--secondary-color);
-    margin-bottom: 0.8rem;
-}
-
-.card-content p {
-    font-size: 0.88rem;
-    line-height: 1.6;
-    color: var(--dark-color);
-}
-
-.card-image {
-    flex: 1;
-    max-width: 320px;
-}
-
-.card-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-}
-
-.card-image img:hover {
-    transform: scale(1.05);
-}
-
-.species-section {
-    padding: 3.2rem 1.6rem;
-    background: linear-gradient(135deg, var(--light-color) 0%, var(--white-color) 100%);
-}
-
-.species-section h1 {
-    text-align: center;
-    color: var(--secondary-color);
-    margin-bottom: 2.4rem;
-    font-size: 2.4rem;
-}
-
-.species-grid {
+.species-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.6rem;
-    max-width: 1120px;
-    margin: 0 auto;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .species-card {
@@ -157,18 +86,14 @@
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 20px var(--shadow-color);
-    transition: transform 0.3s ease;
-}
-
-.species-card:hover {
-    transform: translateY(-10px);
+    transition: 0.3s ease-in-out;
 }
 
 .species-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: 0.3s ease-in-out;
 }
 
 .species-card:hover .species-image {
