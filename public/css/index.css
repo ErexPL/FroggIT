@@ -135,7 +135,7 @@ table {
 }
 
 th {
-    background-color: var(--secondary-color);
+    background: var(--secondary-color);
     color: var(--white-color);
     padding: 0.8rem;
     font-size: 0.8rem;
@@ -150,7 +150,7 @@ td {
 }
 
 tr:hover td {
-    background-color: var(--light-color);
+    background: var(--light-color);
 }
 
 .first {
