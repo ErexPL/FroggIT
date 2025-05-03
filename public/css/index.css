@@ -1,5 +1,5 @@
 .hero-section {
-    height: 60vh;
+    height: 48vh;
     background: linear-gradient(135deg, var(--secondary-color) 0%, var(--light-color) 100%);
     display: flex;
     justify-content: center;
@@ -60,29 +60,29 @@
 }
 
 .hero-content h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+    font-size: 3.2rem;
+    margin-bottom: 0.8rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .hero-content p {
-    font-size: 1.5rem;
-    max-width: 600px;
+    font-size: 1.2rem;
+    max-width: 480px;
     margin: 0 auto;
 }
 
 .featured-frogs {
-    padding: 4rem 2rem;
+    padding: 3.2rem 1.6rem;
     background-color: var(--light-color);
 }
 
 .frog-card {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 2rem;
+    gap: 1.6rem;
+    max-width: 960px;
+    margin: 1.6rem auto;
+    padding: 1.6rem;
     background: var(--white-color);
     border-radius: 20px;
     box-shadow: 0 10px 30px var(--shadow-color);
@@ -99,24 +99,24 @@
 
 .card-content {
     flex: 1;
-    padding: 1rem;
+    padding: 0.8rem;
 }
 
 .card-content h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: var(--secondary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 .card-content p {
-    font-size: 1.1rem;
+    font-size: 0.88rem;
     line-height: 1.6;
     color: var(--dark-color);
 }
 
 .card-image {
     flex: 1;
-    max-width: 400px;
+    max-width: 320px;
 }
 
 .card-image img {
@@ -131,23 +131,23 @@
 }
 
 .species-section {
-    padding: 4rem 2rem;
+    padding: 3.2rem 1.6rem;
     background: linear-gradient(135deg, var(--light-color) 0%, var(--white-color) 100%);
 }
 
 .species-section h1 {
     text-align: center;
     color: var(--secondary-color);
-    margin-bottom: 3rem;
-    font-size: 3rem;
+    margin-bottom: 2.4rem;
+    font-size: 2.4rem;
 }
 
 .species-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
-    max-width: 1400px;
+    gap: 1.6rem;
+    max-width: 1120px;
     margin: 0 auto;
 }
 
@@ -166,7 +166,7 @@
 
 .species-image {
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -176,27 +176,28 @@
 }
 
 .species-content {
-    padding: 1.5rem;
+    padding: 1.2rem;
 }
 
 .species-content h2 {
     color: var(--secondary-color);
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.44rem;
 }
 
 .species-content p {
     color: var(--dark-color);
     line-height: 1.6;
+    font-size: 0.88rem;
 }
 
 .comparison-section {
-    margin-top: 4rem;
-    padding: 2rem;
+    margin-top: 3.2rem;
+    padding: 1.6rem;
 }
 
 .table-wrapper {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
     overflow-x: auto;
     background: var(--white-color);
@@ -211,15 +212,15 @@ table {
 th {
     background-color: var(--secondary-color);
     color: var(--white-color);
-    padding: 1rem;
-    font-size: 1rem;
+    padding: 0.8rem;
+    font-size: 0.8rem;
     text-align: left;
 }
 
 td {
-    padding: 1rem;
+    padding: 0.8rem;
     border-bottom: 1px solid var(--light-color);
-    font-size: 0.9rem;
+    font-size: 0.72rem;
     color: var(--dark-color);
 }
 
