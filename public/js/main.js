@@ -1,5 +1,7 @@
 const themeToggle = document.querySelector('.theme-toggle');
 const authorSpan = document.querySelector('footer span');
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const mobileNav = document.querySelector('.mobile-nav');
 let darkMode = localStorage.getItem('darkMode') === 'true';
 
 const updateTheme = () => {
@@ -18,6 +20,36 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('darkMode', darkMode);
     updateTheme();
 });
+
+hamburgerMenu.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+    if (mobileNav.classList.contains('active')) {
+        hamburgerMenu.querySelector('i').classList.replace('fa-bars', 'fa-xmark');
+    } else {
+        hamburgerMenu.querySelector('i').classList.replace('fa-xmark', 'fa-bars');
+    }
+});
+
+mobileNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileNav.classList.remove('active');
+        hamburgerMenu.querySelector('i').classList.replace('fa-xmark', 'fa-bars');
+    });
+});
+
+const checkWindowWidth = () => {
+    if (window.innerWidth > 768) {
+        mobileNav.classList.remove('active');
+        mobileNav.classList.remove('mobile-nav');
+        hamburgerMenu.querySelector('i').classList.replace('fa-xmark', 'fa-bars');
+    } else if (window.innerWidth <= 768) {
+        mobileNav.classList.add('mobile-nav');
+    }
+};
+
+window.addEventListener('resize', checkWindowWidth);
+
+window.addEventListener('DOMContentLoaded', checkWindowWidth);
 
 authorSpan.addEventListener('click', () => {
     const textarea = document.createElement('textarea');

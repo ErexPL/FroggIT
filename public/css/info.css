@@ -42,3 +42,51 @@ main article img {
     font-style: italic;
     color: var(--dark-color);
 }
+
+@media screen and (max-width: 1000px) {
+    main article {
+        padding: 2rem;
+        margin: 0 1rem;
+    }
+    
+    main article img {
+        max-width: 90%;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    main article {
+        padding: 1.5rem;
+    }
+    
+    main article p {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+    
+    #short {
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main article {
+        padding: 1.2rem;
+    }
+    
+    main article p {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    main article img {
+        margin: 1.5rem auto;
+    }
+    
+    #short {
+        padding: 1.2rem;
+        margin: 1.2rem 0;
+    }
+}

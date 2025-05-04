@@ -23,7 +23,7 @@
     content: '';
     position: absolute;
     left: 0;
-    width: 2000%;
+    width: calc(100vh * 35);
     height: 100%;
     background-size: 5% auto;
     background-image:
@@ -152,4 +152,62 @@ tr:hover td {
 .first {
     color: var(--secondary-color);
     font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    .species-box {
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .species-card {
+        flex: 0 0 calc(50% - 2rem);
+    }
+    
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+        max-width: 320px;
+    }
+    
+    .species-card {
+        flex: 0 0 100%;
+        margin-bottom: 1.5rem;
+    }
+    
+    table {
+        width: 100%;
+        min-width: 650px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero-section {
+        height: calc(100vh - 56px);
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+    
+    .species-content h2 {
+        font-size: 1.2rem;
+    }
+    
+    .species-content p {
+        font-size: 0.8rem;
+    }
 }
